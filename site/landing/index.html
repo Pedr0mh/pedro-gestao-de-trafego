@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>WayDigitus · Direção de marketing para empresas que querem crescer</title>
 <meta name="description" content="Sua empresa não precisa de mais uma agência. Precisa de um diretor de marketing. Estratégia, CRM, Google Ads e Meta Ads com foco em resultado.">
 <meta property="og:title" content="WayDigitus · Direção de marketing">
@@ -431,10 +432,13 @@ footer{background:#05081D;padding-block:56px 40px}
 // Vídeo do YouTube: só carrega no clique
 document.getElementById('play-video').addEventListener('click', function () {
   var id = this.getAttribute('data-youtube');
+  // Aberto direto do computador (file://) o YouTube recusa o player (erro 153): abre no YouTube
+  if (location.protocol === 'file:') { window.open('https://www.youtube.com/shorts/' + id, '_blank', 'noopener'); return; }
   var box = document.createElement('div');
   box.className = 'phone-screen';
   var f = document.createElement('iframe');
-  f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&playsinline=1&rel=0&modestbranding=1';
+  f.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&playsinline=1&rel=0&origin=' + encodeURIComponent(location.origin);
+  f.referrerPolicy = 'strict-origin-when-cross-origin';
   f.title = 'Somos a WayDigitus';
   f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
   f.allowFullscreen = true;
