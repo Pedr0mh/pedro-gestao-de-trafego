@@ -67,7 +67,7 @@
 │ [ Agendar diagnóstico ]      Ver como funciona ↓                             │
 │                                                                              │
 │ LINHA DE APOIO                                                               │
-│   Estratégia comercial · CRM · Google Ads · Meta Ads · Marketing de ponta a  │
+│   Estratégia · CRM · Google Ads · Meta Ads · Marketing de ponta a            │
 │   ponta                                                                      │
 │                                                                              │
 │                                           [ FOTO DO PEDRO ]                  │
@@ -154,7 +154,7 @@
 │ [B5] MERCADOLOGIA                                                            │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ TÍTULO                                                                       │
-│   Anúncio sem estratégia comercial é só um jeito mais caro de ser ignorado.  │
+│   Anúncio sem estratégia é só um jeito mais caro de ser ignorado.            │
 │                                                                              │
 │ SUBTÍTULO                                                                    │
 │   Antes de anunciar, é preciso entender o mercado.                           │
@@ -218,7 +218,7 @@
 │   Tudo o que um departamento de marketing faria, com uma pessoa responsável  │
 │   pelo resultado                                                             │
 │                                                                              │
-│ [CARD] ESTRATÉGIA COMERCIAL                                                  │
+│ [CARD] ESTRATÉGIA                                                            │
 │   Posicionamento, oferta, precificação e plano de resultado.                 │
 │ [CARD] CONSTRUÇÃO DE CRM                                                     │
 │   Implantação e organização do CRM, funil de vendas, etapas e automações     │
