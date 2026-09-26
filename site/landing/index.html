@@ -196,7 +196,13 @@ footer{background:#05081D;padding-block:56px 40px}
 /* Tablet */
 @media (max-width:1100px){
   :root{--pad-x:48px;--pad-y:88px}
-  .hero .wrap,.split,.two-col-head,.about,.faq-grid,.contact .wrap{grid-template-columns:1fr;gap:48px}
+  .hero .wrap,.split,.two-col-head,.about,.faq-grid,.contact .wrap:not(.sec-label){grid-template-columns:1fr;gap:48px}
+  .contact .wrap:not(.sec-label){gap:28px}
+  .contact .stack{display:contents}
+  .contact h2{order:1}
+  .contact .lead{order:2}
+  .contact .form{order:3}
+  .contact .guarantees{order:4}
   .steps{grid-template-columns:repeat(2,1fr)}
   .foot{grid-template-columns:1fr 1fr}
   nav a.link{display:none}
