@@ -480,6 +480,18 @@ document.getElementById('lead-form').addEventListener('submit', function (e) {
   fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
     .then(done).catch(done);
 });
+
+// Esconde o selo "Powered by Netlify" caso a plataforma insira na página
+(function () {
+  function esconder(root) {
+    (root || document).querySelectorAll('body > *:not(header):not(main):not(footer):not(script):not(.wa-float)').forEach(function (el) {
+      var t = (el.textContent || '') + ' ' + (el.getAttribute('src') || '') + ' ' + (el.id || '') + ' ' + (el.className || '');
+      if (/netlify/i.test(t)) el.style.setProperty('display', 'none', 'important');
+    });
+  }
+  esconder();
+  new MutationObserver(function () { esconder(); }).observe(document.body, { childList: true });
+})();
 </script>
 </body>
 </html>
