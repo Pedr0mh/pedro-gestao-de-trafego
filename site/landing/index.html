@@ -68,7 +68,7 @@ nav .btn{padding:13px 22px;font-size:15px}
 .video{display:flex;flex-direction:column;align-items:center;gap:18px}
 .phone{width:300px;height:580px;max-width:100%;border-radius:44px;background:var(--surface);padding:12px;box-shadow:0 30px 80px rgba(54,86,245,.25)}
 .phone-screen{position:relative;width:100%;height:100%;border-radius:34px;background:#1A2253;overflow:hidden;display:flex;align-items:center;justify-content:center;border:0;padding:0;cursor:pointer;color:var(--dim);font-family:inherit}
-.phone-screen img,.phone-screen video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.phone-screen img,.phone-screen video,.phone-screen iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
 .play{position:relative;width:68px;height:68px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
 .video-caption{font-size:14px;line-height:1.5;color:var(--dim);text-align:center;max-width:300px}
 .scroll-cue{text-align:center;font-size:13px;color:var(--dim);padding:28px 0 28px}
@@ -240,10 +240,10 @@ footer{background:#05081D;padding-block:56px 40px}
     </div>
     <div class="video">
       <div class="phone">
-        <!-- O vídeo só carrega quando a pessoa clica: a página abre mais rápido.
-             Troque assets/video-capa.jpg e assets/video.mp4 pelos seus arquivos. -->
-        <button class="phone-screen" id="play-video" type="button" aria-label="Assistir vídeo: Somos a WayDigitus">
-          <!-- <img src="assets/video-capa.jpg" alt=""> -->
+        <!-- Vídeo do YouTube (Shorts). Só carrega quando a pessoa clica: a página abre mais rápido.
+             Para trocar de vídeo, mude o ID em data-youtube e nas imagens da capa. -->
+        <button class="phone-screen" id="play-video" type="button" data-youtube="CxByBvdDick" aria-label="Assistir vídeo: Somos a WayDigitus">
+          <img src="https://i.ytimg.com/vi/CxByBvdDick/oardefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/CxByBvdDick/hqdefault.jpg'" alt="">
           <span class="play"><svg width="24" height="24" viewBox="0 0 24 24" fill="#080C28" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
         </button>
       </div>
@@ -428,12 +428,18 @@ footer{background:#05081D;padding-block:56px 40px}
 </a>
 
 <script>
-// Vídeo: só carrega no clique (troque o caminho do arquivo)
+// Vídeo do YouTube: só carrega no clique
 document.getElementById('play-video').addEventListener('click', function () {
-  var v = document.createElement('video');
-  v.src = 'assets/video.mp4';
-  v.controls = true; v.autoplay = true; v.playsInline = true;
-  this.innerHTML = ''; this.appendChild(v);
+  var id = this.getAttribute('data-youtube');
+  var box = document.createElement('div');
+  box.className = 'phone-screen';
+  var f = document.createElement('iframe');
+  f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&playsinline=1&rel=0&modestbranding=1';
+  f.title = 'Somos a WayDigitus';
+  f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+  f.allowFullscreen = true;
+  box.appendChild(f);
+  this.replaceWith(box);
 });
 
 // Formulário: troque o ENDPOINT pelo webhook do seu CRM (RD Station, Kommo, Pipedrive, Zapier, Make...)
