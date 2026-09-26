@@ -359,6 +359,15 @@
 
 ---
 
+## Bloco novo: vídeo "Somos a WayDigitus" (entra nas 3 propostas de layout)
+
+- **Título:** A atenção do seu cliente está no celular. A sua empresa está lá?
+- **Texto:** Way é caminho. Digitus é digital. A WayDigitus traça o caminho entre a sua empresa e a pessoa certa, na hora certa, no lugar certo, e faz essa atenção virar venda.
+- **Apoio (proposta 3):** Pessoa certa · Hora certa · Lugar certo · Venda no caixa
+- **Elemento:** player do vídeo de apresentação
+
+---
+
 ## Para aprimorar depois
 
 **Dor (B3)**
