@@ -1,0 +1,7 @@
+Coloque aqui as imagens e o vídeo do site:
+
+- logo.svg (logo da WayDigitus)
+- pedro.jpg (foto do bloco Sobre)
+- video-capa.jpg (capa do vídeo no celular)
+- video.mp4 (vídeo Somos a WayDigitus)
+- cliente1.png, cliente2.png... (logos dos clientes)
