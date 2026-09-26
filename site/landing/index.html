@@ -2,6 +2,13 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N8Z3ZKZR');</script>
+<!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>WayDigitus · Direção de marketing para empresas que querem crescer</title>
@@ -11,7 +18,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Poppins:wght@600&display=swap">
-<!-- Cole aqui o Pixel da Meta e a tag do Google (GA4 / Google Ads) -->
 <style>
 :root{
   --bg:#080C28; --bg-2:#0D1235; --surface:#11183F; --line:#1A2150; --line-2:#222A5E;
@@ -231,6 +237,10 @@ footer{background:#05081D;padding-block:56px 40px}
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8Z3ZKZR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- CONFIGURAÇÃO RÁPIDA
   1. Troque 5561998870446 pelo seu número de WhatsApp (com DDI 55 e DDD) em todos os links wa.me.
@@ -254,7 +264,7 @@ footer{background:#05081D;padding-block:56px 40px}
 
 <main>
 
-<section class="hero">
+<section id="inicio" class="hero">
   <div class="wrap">
     <div class="hero-text">
       <span class="eyebrow">Marketing e vendas para empresas que querem crescer</span>
@@ -306,7 +316,7 @@ footer{background:#05081D;padding-block:56px 40px}
   </div>
 </section>
 
-<section class="light">
+<section id="diferenca" class="light">
   <div class="wrap sec-label">A diferença</div>
   <div class="wrap">
     <div class="two-col-head">
@@ -334,7 +344,7 @@ footer{background:#05081D;padding-block:56px 40px}
   </div>
 </section>
 
-<section>
+<section id="mercado">
   <div class="wrap sec-label">Por onde começamos</div>
   <div class="wrap">
     <div class="two-col-head" style="margin-bottom:0">
@@ -367,7 +377,7 @@ footer{background:#05081D;padding-block:56px 40px}
   </div>
 </section>
 
-<section>
+<section id="servico">
   <div class="wrap sec-label">O serviço</div>
   <div class="wrap split">
     <div class="stack">
@@ -465,6 +475,8 @@ footer{background:#05081D;padding-block:56px 40px}
 <script>
 // Vídeo do YouTube: só carrega no clique
 document.getElementById('play-video').addEventListener('click', function () {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'play_video' });
   var id = this.getAttribute('data-youtube');
   // Aberto direto do computador (file://) o YouTube recusa o player (erro 153): abre no YouTube
   if (location.protocol === 'file:') { window.open('https://www.youtube.com/shorts/' + id, '_blank', 'noopener'); return; }
@@ -494,13 +506,13 @@ document.getElementById('lead-form').addEventListener('submit', function (e) {
     'WhatsApp: ' + (data.whatsapp || '') + '\n' +
     (data.email ? 'E-mail: ' + data.email + '\n' : '') +
     'Ramo do negócio: ' + (data.ramo || '');
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'envio_formulario', ramo_negocio: data.ramo || '' });
   window.open('https://wa.me/5561998870446?text=' + encodeURIComponent(msg), '_blank', 'noopener');
   var done = function () {
     document.getElementById('form-ok').style.display = 'block';
     form.querySelector('button[type=submit]').disabled = true;
-    // Evento de conversão: descomente quando os pixels estiverem instalados
-    // if (window.fbq) fbq('track', 'Lead');
-    // if (window.gtag) gtag('event', 'generate_lead');
+
   };
   if (!ENDPOINT) { done(); return; }
   fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
@@ -515,6 +527,21 @@ document.getElementById('lead-form').addEventListener('submit', function (e) {
   function atualizar() { cue.classList.toggle('oculto', window.scrollY > 120); }
   window.addEventListener('scroll', atualizar, { passive: true });
   atualizar();
+})();
+
+// Medição (GTM): cliques nos botões que levam ao WhatsApp
+(function () {
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
+    if (!a) return;
+    var secao = a.closest('section, header, footer');
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: a.classList.contains('btn-primary') ? 'clique_agendar' : 'clique_whatsapp',
+      botao_texto: (a.textContent || '').trim() || a.getAttribute('aria-label') || '',
+      secao: secao ? (secao.id || secao.tagName.toLowerCase()) : 'flutuante'
+    });
+  });
 })();
 </script>
 </body>
