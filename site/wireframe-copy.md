@@ -5,7 +5,7 @@
 
 ## Ideia central da copy
 
-**A grande revelação:** a maioria das agências vende **comunicação** (post, criativo, anúncio, alcance). O empresário acha que está comprando **vendas**. Esse desencontro é a origem da frustração: o marketing "está rodando", mas o caixa não muda.
+**A grande revelação:** a maioria das agências vende **comunicação** (post, criativo, anúncio, alcance). O empresário acha que está comprando **resultado**. Esse desencontro é a origem da frustração: o marketing "está rodando", mas o caixa não muda.
 
 **O posicionamento:** Pedro não é mais um fornecedor de anúncios. Ele ocupa a cadeira de **Diretor de Marketing (CMO)** da empresa: entende o mercado, ajusta a oferta, organiza o comercial, monta o CRM e só então coloca tráfego (Google e Meta) para acelerar o que já funciona.
 
@@ -80,7 +80,7 @@
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ FRASE DE IMPACTO (centralizada)                                              │
 │   A maioria das agências vende comunicação.                                  │
-│   Quase nenhuma entrega vendas.                                              │
+│   Quase nenhuma entrega resultado.                                           │
 │                                                                              │
 │ TEXTO                                                                        │
 │   Post bonito, criativo novo toda semana, relatório cheio de alcance e       │
@@ -93,7 +93,7 @@
 │   parte mais visível e fica sem a parte que coloca dinheiro no caixa.        │
 │                                                                              │
 │ ELEMENTO DE DESTAQUE                                                         │
-│   Comunicação ≠ Vendas                                                       │
+│   Comunicação ≠ Resultado                                                    │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -128,7 +128,7 @@
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ TÍTULO                                                                       │
 │   Você está pagando por comunicação.                                         │
-│   O que você precisa é de vendas.                                            │
+│   O que você precisa é de resultado.                                         │
 │                                                                              │
 │ SUBTÍTULO                                                                    │
 │   O que você compra hoje x o que você realmente precisa                      │
@@ -136,7 +136,7 @@
 │   AGÊNCIA                      | CMO                                         │
 │   -----------------------------+-----------------------------------------    │
 │   Posts e criativos            | Estratégia de crescimento                   │
-│   Alcance, curtidas e cliques  | Leads qualificados, vendas, faturamento     │
+│   Alcance, curtidas e cliques  | Leads qualificados, resultado, faturamento  │
 │   Campanha no ar               | Campanha ligada ao processo comercial       │
 │   Relatório de mídia           | Leitura do negócio: CAC, ticket, margem     │
 │   "O comercial é com você"     | Comercial estruturado, com CRM e rotina     │
@@ -191,7 +191,7 @@
 │     e processo comercial. Aqui descobrimos onde o dinheiro está vazando.     │
 │                                                                              │
 │ 02  ESTRATÉGIA                                                               │
-│     Plano de marketing e vendas com metas claras: quem vamos atingir, com    │
+│     Plano de marketing e resultado com metas claras: quem vamos atingir, com │
 │     qual mensagem, em quais canais e quanto isso deve gerar.                 │
 │                                                                              │
 │ 03  ESTRUTURA                                                                │
@@ -219,7 +219,7 @@
 │   pelo resultado                                                             │
 │                                                                              │
 │ [CARD] ESTRATÉGIA COMERCIAL                                                  │
-│   Posicionamento, oferta, precificação e plano de vendas.                    │
+│   Posicionamento, oferta, precificação e plano de resultado.                 │
 │ [CARD] CONSTRUÇÃO DE CRM                                                     │
 │   Implantação e organização do CRM, funil de vendas, etapas e automações     │
 │   para nenhum lead ficar para trás.                                          │
@@ -320,7 +320,7 @@
 │ + O que acontece no diagnóstico?                                             │
 │   Uma conversa de aproximadamente 45 minutos em que eu entendo o seu         │
 │   negócio, os seus números e o seu momento. Você sai com uma visão clara de  │
-│   onde está perdendo vendas, mesmo que a gente não trabalhe junto.           │
+│   onde está perdendo resultado, mesmo que a gente não trabalhe junto.        │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -330,7 +330,7 @@
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ HEADLINE                                                                     │
 │   Pare de comprar comunicação.                                               │
-│   Comece a construir vendas.                                                 │
+│   Comece a construir resultado.                                              │
 │                                                                              │
 │ TEXTO                                                                        │
 │   Em uma conversa de diagnóstico, eu vou olhar o seu mercado, a sua oferta e │
@@ -349,7 +349,7 @@
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ [B12] RODAPÉ                                                                 │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│ Pedro [Sobrenome] · Direção de Marketing e Vendas                            │
+│ Pedro [Sobrenome] · Direção de Marketing e Resultado                         │
 │ WhatsApp · Instagram · E-mail                                                │
 │ CNPJ ___ · Todos os direitos reservados                                      │
 │                                                                              │
@@ -375,7 +375,7 @@
 **Botões de conversão (alta conversão):**
 - Topo: "Agendar diagnóstico gratuito" + "Falar no WhatsApp"
 - Agência x CMO: "Quero um CMO na minha empresa"
-- Dor: "Quero descobrir onde estou perdendo vendas"
+- Dor: "Quero descobrir onde estou perdendo resultado"
 - Método: "Quero começar pelo diagnóstico" + "Falar no WhatsApp"
 - Serviços: "Agendar diagnóstico"
 - Sobre: "Conversar com o Pedro"
@@ -384,7 +384,7 @@
 
 **Formulário final**
 - Selo: DIAGNÓSTICO GRATUITO · 45 MINUTOS
-- Headline: Pare de comprar comunicação. Comece a construir vendas.
+- Headline: Pare de comprar comunicação. Comece a construir resultado.
 - Texto: Preencha o formulário e eu entro em contato para agendar o seu diagnóstico. Vou olhar o seu mercado, a sua oferta e o seu comercial e te mostrar onde a sua empresa está deixando dinheiro na mesa.
 - Garantias: Resposta em até 1 dia útil · Sem compromisso de contratação · Se eu não puder te ajudar, digo isso na primeira conversa
 - Campos: Nome · E-mail · WhatsApp · Empresa · Faturamento mensal (faixas) · Qual é o seu maior desafio hoje?
