@@ -433,15 +433,7 @@ footer{background:#05081D;padding-block:56px 40px}
       <div class="field"><label for="f-nome">Nome</label><input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Como posso te chamar?" required></div>
       <div class="field"><label for="f-whats">WhatsApp</label><input id="f-whats" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" required></div>
       <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com.br"></div>
-      <div class="field"><label for="f-fat">Faturamento mensal da empresa</label>
-        <select id="f-fat" name="faturamento" required>
-          <option value="">Selecione uma faixa</option>
-          <option>Até R$ 30 mil</option>
-          <option>R$ 30 mil a R$ 100 mil</option>
-          <option>R$ 100 mil a R$ 500 mil</option>
-          <option>Acima de R$ 500 mil</option>
-        </select>
-      </div>
+      <div class="field"><label for="f-ramo">Qual é o ramo do seu negócio?</label><input id="f-ramo" name="ramo" type="text" autocomplete="organization-title" placeholder="Ex.: loja de carros, clínica, infoproduto" required></div>
       <button class="btn" type="submit">Quero agendar meu diagnóstico</button>
       <div class="form-ok" id="form-ok" role="status">Abrindo o WhatsApp com os seus dados. É só enviar a mensagem.</div>
       <small>Seus dados ficam só com a WayDigitus.</small>
@@ -501,7 +493,7 @@ document.getElementById('lead-form').addEventListener('submit', function (e) {
     'Nome: ' + (data.nome || '') + '\n' +
     'WhatsApp: ' + (data.whatsapp || '') + '\n' +
     (data.email ? 'E-mail: ' + data.email + '\n' : '') +
-    'Faturamento mensal: ' + (data.faturamento || '');
+    'Ramo do negócio: ' + (data.ramo || '');
   window.open('https://wa.me/5561998870446?text=' + encodeURIComponent(msg), '_blank', 'noopener');
   var done = function () {
     document.getElementById('form-ok').style.display = 'block';
