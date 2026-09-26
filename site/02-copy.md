@@ -33,16 +33,9 @@
 **Pré-título:**
 Diretor de Marketing para empresas que querem vender, não só aparecer
 
-**Headline (opção A, recomendada):**
+**Headline:**
 Sua empresa não precisa de mais uma agência.
 Precisa de um diretor de marketing.
-
-**Headline (opção B):**
-Você está pagando por comunicação.
-O que você precisa é de vendas.
-
-**Headline (opção C):**
-Anúncio sem estratégia comercial é só um jeito mais caro de ser ignorado.
 
 **Subheadline:**
 Eu assumo a direção de marketing da sua empresa como um CMO: entendo o seu mercado, estruturo o seu comercial e o seu CRM, e coloco Google e Meta para trabalhar em cima de uma máquina que já sabe vender.
@@ -102,6 +95,10 @@ Nada disso se resolve trocando o criativo. Se resolve com alguém olhando o neg�
 ## [B4] Agência x CMO
 
 **Título:**
+Você está pagando por comunicação.
+O que você precisa é de vendas.
+
+**Subtítulo:**
 O que você compra hoje x o que você realmente precisa
 
 | O que a maioria das agências entrega | O que um CMO entrega |
@@ -122,6 +119,9 @@ Agência trabalha para a sua conta de anúncio. Um CMO trabalha para o seu resul
 ## [B5] Mercadologia
 
 **Título:**
+Anúncio sem estratégia comercial é só um jeito mais caro de ser ignorado.
+
+**Subtítulo:**
 Antes de anunciar, é preciso entender o mercado.
 
 **Texto:**
@@ -272,8 +272,7 @@ CNPJ ___ · Todos os direitos reservados
 
 ## Próximos passos
 
-1. Validar a headline do hero (A, B ou C).
-2. Aprofundar o bloco de dor (B3) com a linguagem real dos clientes.
-3. Preencher Sobre (B8) e Prova (B9) com dados reais.
-4. Seguir para a identidade visual (`03-identidade-visual.md`).
-5. Futuro: quando o posicionamento amadurecer, avaliar um bloco de qualificação ("para quem é") entre Serviços e Sobre.
+1. Aprofundar o bloco de dor (B3) com a linguagem real dos clientes.
+2. Preencher Sobre (B8) e Prova (B9) com dados reais.
+3. Seguir para a identidade visual (`03-identidade-visual.md`).
+4. Futuro: quando o posicionamento amadurecer, avaliar um bloco de qualificação ("para quem é") entre Serviços e Sobre.
