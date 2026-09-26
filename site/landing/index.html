@@ -127,7 +127,7 @@ nav .btn{padding:13px 22px;font-size:15px}
 .who span{font-size:14px;color:var(--ink-dim)}
 
 /* Sobre */
-.about{display:grid;grid-template-columns:1fr 1.25fr;gap:80px;align-items:center}
+.about{display:grid;grid-template-columns:minmax(0,760px);gap:80px;align-items:center}
 .photo{aspect-ratio:4/5;max-height:560px;width:100%;border-radius:28px;background:var(--surface);display:flex;align-items:center;justify-content:center;color:var(--faint);font-size:15px;overflow:hidden}
 .photo img{width:100%;height:100%;object-fit:cover}
 .about p{font-size:18px;line-height:1.75;color:var(--muted)}
@@ -347,10 +347,7 @@ footer{background:#05081D;padding-block:56px 40px}
 
 <section id="sobre">
   <div class="wrap about">
-    <div class="photo">
-      <!-- <img src="assets/pedro.jpg" alt="Pedro, diretor de marketing da WayDigitus" loading="lazy"> -->
-      [ Foto do Pedro ]
-    </div>
+    <!-- Foto: quando tiver, volte a usar <div class="photo"><img src="assets/pedro.jpg" alt="Pedro, diretor de marketing da WayDigitus" loading="lazy"></div> e o layout em duas colunas -->
     <div class="stack" style="gap:22px">
       <h2 class="h2">Prazer, eu sou o Pedro.</h2>
       <p>Comecei como gestor de tráfego. Com o tempo, vi um padrão que se repetia: campanha boa e cliente sem crescer. O anúncio trazia gente, mas faltava uma oferta clara, alguém respondendo rápido, alguém fazendo o follow-up.</p>
