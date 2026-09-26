@@ -43,6 +43,11 @@ section{padding-block:var(--pad-y)}
 .btn:focus-visible{outline:3px solid var(--accent-soft);outline-offset:3px}
 .btn-primary{background:#FFFFFF;color:var(--bg);box-shadow:0 10px 30px rgba(169,192,255,.28)}
 .btn-ghost{border:1.5px solid var(--accent-soft);color:#FFFFFF;font-weight:500;padding:16px 24px}
+.btn-brilho{position:relative;overflow:hidden;isolation:isolate}
+.btn-brilho::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 25%,rgba(54,86,245,.16) 50%,transparent 75%);transform:translateX(-110%);animation:caminho 3.6s ease-in-out infinite}
+@keyframes caminho{0%{transform:translateX(-110%)}55%,100%{transform:translateX(110%)}}
+.btn-anel{animation:anel 2.6s ease-out infinite}
+@keyframes anel{0%{box-shadow:0 0 0 0 rgba(169,192,255,.45)}70%,100%{box-shadow:0 0 0 12px rgba(169,192,255,0)}}
 .btn-lg{padding:19px 30px;font-size:17px}
 
 /* Header */
@@ -216,7 +221,7 @@ footer{background:#05081D;padding-block:56px 40px}
   .wa-float{right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:56px;height:56px}
   nav .btn{display:none}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.wa-float{transition:none}.scroll-btn{animation:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.wa-float{transition:none}.scroll-btn,.btn-brilho::after,.btn-anel{animation:none}}
 </style>
 </head>
 <body>
@@ -250,8 +255,8 @@ footer{background:#05081D;padding-block:56px 40px}
       <h1>Sua empresa não precisa de mais uma agência. <span class="accent">Precisa de um diretor de marketing.</span></h1>
       <p class="lead">Eu sou o Pedro, e trabalho como o diretor de marketing da sua empresa. Olho o mercado, arrumo o comercial e o CRM, e só depois invisto em anúncio no Google e na Meta.</p>
       <div class="ctas">
-        <a class="btn btn-primary btn-lg" href="https://wa.me/5561998870446?text=Oi%2C%20Pedro!%20Vim%20pelo%20site%20e%20quero%20agendar%20o%20diagn%C3%B3stico." target="_blank" rel="noopener">Agendar diagnóstico gratuito</a>
-        <a class="btn btn-ghost" href="https://wa.me/5561998870446?text=Oi%2C%20Pedro!%20Vim%20pelo%20site%20e%20quero%20agendar%20o%20diagn%C3%B3stico." target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a class="btn btn-primary btn-lg btn-brilho" href="https://wa.me/5561998870446?text=Oi%2C%20Pedro!%20Vim%20pelo%20site%20e%20quero%20agendar%20o%20diagn%C3%B3stico." target="_blank" rel="noopener">Agendar diagnóstico gratuito</a>
+        <a class="btn btn-ghost btn-anel" href="https://wa.me/5561998870446?text=Oi%2C%20Pedro!%20Vim%20pelo%20site%20e%20quero%20agendar%20o%20diagn%C3%B3stico." target="_blank" rel="noopener">Falar no WhatsApp</a>
       </div>
       <span class="note">Conversa de 45 minutos, sem custo e sem compromisso.</span>
     </div>
@@ -263,12 +268,12 @@ footer{background:#05081D;padding-block:56px 40px}
           <span class="cover">
             <span class="cover-top"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="height:56px;width:auto" viewBox="60 30 520 395" fill="none"><defs><mask id="saida-video"><rect x="60" y="30" width="520" height="395" fill="#fff"/><rect x="370" y="212" width="100" height="32" fill="#000"/></mask></defs><path mask="url(#saida-video)" fill="#1E8BFF" d="M130 45H250C372 45 448 130 448 228C448 334 368 412 256 412H232V352H256C332 352 388 298 388 228C388 158 333 105 250 105H190V292H130Z"/><g stroke="#2E9BFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M266 160V250C266 270 256 282 236 290L150 322C132 329 126 340 126 356"/><path d="M78 356C78 342 86 332 100 330L274 308C296 304 308 292 308 270V256C308 238 318 228 338 228H548"/></g><g fill="#2E9BFF"><circle cx="266" cy="156" r="14"/><circle cx="126" cy="360" r="14"/><circle cx="78" cy="360" r="14"/><circle cx="556" cy="228" r="16"/></g></svg></span>
             <span class="cover-title">Somos a<br>WayDigitus</span>
-            <span class="cover-sub">Assista em 1 minuto</span>
+            <span class="cover-sub">Assista em 59 segundos</span>
           </span>
           <span class="play"><svg width="24" height="24" viewBox="0 0 24 24" fill="#080C28" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
         </button>
       </div>
-      <span class="video-caption">Seu cliente passa horas no celular. Em 1 minuto, eu explico como aparecer para ele na hora certa.</span>
+      <span class="video-caption">Seu cliente passa horas no celular. Em 59 segundos, eu explico como aparecer para ele na hora certa.</span>
     </div>
   </div>
   <a class="scroll-cue" href="#problema">
@@ -393,7 +398,7 @@ footer{background:#05081D;padding-block:56px 40px}
     <div class="stack" style="gap:18px">
       <h2 class="h2">Dúvidas frequentes</h2>
       <p class="muted" style="font-size:17px">Não achou a sua? Me chama no WhatsApp.</p>
-      <div><a class="btn btn-ghost" href="https://wa.me/5561998870446?text=Oi%2C%20Pedro!%20Tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener">Falar no WhatsApp</a></div>
+      <div><a class="btn btn-ghost btn-anel" href="https://wa.me/5561998870446?text=Oi%2C%20Pedro!%20Tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener">Falar no WhatsApp</a></div>
     </div>
     <div>
       <details open><summary>A WayDigitus é uma agência?</summary><p>Fazemos o que uma agência faz, e também o que vem antes e depois: plano, oferta, CRM e comercial. Por isso eu me apresento como diretor de marketing.</p></details>
