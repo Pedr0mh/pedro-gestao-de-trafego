@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 30 520 395" fill="none">
+  <defs>
+    <mask id="saida">
+      <rect x="60" y="30" width="520" height="395" fill="#fff"/>
+      <rect x="370" y="212" width="100" height="32" fill="#000"/>
+    </mask>
+  </defs>
+  <path mask="url(#saida)" fill="#1E8BFF" d="M130 45H250C372 45 448 130 448 228C448 334 368 412 256 412H232V352H256C332 352 388 298 388 228C388 158 333 105 250 105H190V292H130Z"/>
+  <g stroke="#2E9BFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M266 160V250C266 270 256 282 236 290L150 322C132 329 126 340 126 356"/>
+    <path d="M78 356C78 342 86 332 100 330L274 308C296 304 308 292 308 270V256C308 238 318 228 338 228H548"/>
+  </g>
+  <g fill="#2E9BFF">
+    <circle cx="266" cy="156" r="14"/>
+    <circle cx="126" cy="360" r="14"/>
+    <circle cx="78" cy="360" r="14"/>
+    <circle cx="556" cy="228" r="16"/>
+  </g>
+</svg>
