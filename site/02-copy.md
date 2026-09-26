@@ -187,31 +187,11 @@ Mensagens, páginas e criativos alinhados com a estratégia (a comunicação no 
 **Gestão e indicadores**
 Painel com os números que importam (CAC, conversão, ticket, faturamento) e reuniões periódicas de direção.
 
----
-
-## [B8] Para quem é / Para quem não é
-
-**Título:**
-Eu não trabalho com todo mundo. E isso é bom para você.
-
-**É para você se:**
-- ✓ Você é dono ou sócio e quer crescer com previsibilidade
-- ✓ Já tentou agência e sentiu que faltava estratégia
-- ✓ Quer entender os números do seu marketing e do seu comercial
-- ✓ Está disposto a ajustar processo, não só anúncio
-- ✓ Quer alguém que pense o negócio junto com você
-
-**Não é para você se:**
-- ✗ Você só quer alguém para postar no Instagram
-- ✗ Procura o serviço mais barato do mercado
-- ✗ Espera resultado sem mexer em nada dentro da empresa
-- ✗ Não pretende acompanhar o comercial
-
 **CTA:** Agendar diagnóstico
 
 ---
 
-## [B9] Sobre o Pedro
+## [B8] Sobre o Pedro
 
 **Título:**
 Prazer, eu sou o Pedro.
@@ -227,7 +207,7 @@ Foi aí que parei de me enxergar como gestor de anúncios e passei a atuar como 
 
 ---
 
-## [B10] Prova ⚠ APRIMORAR
+## [B9] Prova ⚠ APRIMORAR
 
 > Espaço reservado. Preencher com dados reais.
 
@@ -238,7 +218,7 @@ Foi aí que parei de me enxergar como gestor de anúncios e passei a atuar como 
 
 ---
 
-## [B11] FAQ
+## [B10] FAQ
 
 **Você é uma agência?**
 Não. Agência entrega execução de comunicação. Eu atuo como diretor de marketing: defino a estratégia, estruturo o comercial e coordeno a execução, com responsabilidade sobre o resultado.
@@ -266,7 +246,7 @@ Uma conversa de aproximadamente 45 minutos em que eu entendo o seu negócio, os 
 
 ---
 
-## [B12] CTA final
+## [B11] CTA final
 
 **Headline:**
 Pare de comprar comunicação.
@@ -282,7 +262,7 @@ Sem compromisso. Se eu não puder te ajudar, vou te dizer isso na primeira conve
 
 ---
 
-## [B13] Footer
+## [B12] Footer
 
 Pedro [Sobrenome] · Direção de Marketing e Vendas
 WhatsApp · Instagram · E-mail
@@ -294,5 +274,6 @@ CNPJ ___ · Todos os direitos reservados
 
 1. Validar a headline do hero (A, B ou C).
 2. Aprofundar o bloco de dor (B3) com a linguagem real dos clientes.
-3. Preencher Sobre (B9) e Prova (B10) com dados reais.
-4. Seguir para a identidade visual.
+3. Preencher Sobre (B8) e Prova (B9) com dados reais.
+4. Seguir para a identidade visual (`03-identidade-visual.md`).
+5. Futuro: quando o posicionamento amadurecer, avaliar um bloco de qualificação ("para quem é") entre Serviços e Sobre.

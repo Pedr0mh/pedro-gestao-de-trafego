@@ -48,22 +48,19 @@
 │  Grid 2x3: Estratégia comercial · CRM · Google Ads       │
 │  Meta Ads · Funil e oferta · Rotina de gestão            │
 ├──────────────────────────────────────────────────────────┤
-│ [B8] PARA QUEM É / PARA QUEM NÃO É                       │
-│  Duas colunas com checklist ✓ e ✗                        │
-├──────────────────────────────────────────────────────────┤
-│ [B9] SOBRE O PEDRO                                       │
+│ [B8] SOBRE O PEDRO                                       │
 │  Foto + texto em primeira pessoa + assinatura            │
 ├──────────────────────────────────────────────────────────┤
-│ [B10] PROVA  ⚠ ESPAÇO RESERVADO                          │
+│ [B9]  PROVA  ⚠ ESPAÇO RESERVADO                          │
 │  Números / cases / depoimentos / logos                   │
 ├──────────────────────────────────────────────────────────┤
-│ [B11] FAQ (acordeão, 6 a 8 perguntas)                    │
+│ [B10] FAQ (acordeão, 6 a 8 perguntas)                    │
 ├──────────────────────────────────────────────────────────┤
-│ [B12] CTA FINAL                                          │
+│ [B11] CTA FINAL                                          │
 │  Headline + texto curto + [ Agendar diagnóstico ]        │
 │  Microcopy de redução de risco                           │
 ├──────────────────────────────────────────────────────────┤
-│ [B13] FOOTER                                             │
+│ [B12] FOOTER                                             │
 │  Nome · WhatsApp · Instagram · E-mail · CNPJ             │
 └──────────────────────────────────────────────────────────┘
    [ botão flutuante WhatsApp, fixo no canto ]
@@ -82,17 +79,16 @@
 | B5 Mercadologia | Autoridade | "Ele pensa no negócio, não só no anúncio." |
 | B6 Método | Clareza | "Entendi como funciona e o que vem primeiro." |
 | B7 Serviços | Concretude | "Sei exatamente o que vou receber." |
-| B8 Para quem é | Qualificação | "É pra mim" (ou "não é, e tudo bem"). |
-| B9 Sobre | Confiança | "Quero essa pessoa no meu time." |
-| B10 Prova | Segurança | "Já funcionou para outros." |
-| B11 FAQ | Remoção de objeções | "Minhas dúvidas foram respondidas." |
-| B12 CTA final | Ação | "O próximo passo é simples e sem risco." |
+| B8 Sobre | Confiança | "Quero essa pessoa no meu time." |
+| B9 Prova | Segurança | "Já funcionou para outros." |
+| B10 FAQ | Remoção de objeções | "Minhas dúvidas foram respondidas." |
+| B11 CTA final | Ação | "O próximo passo é simples e sem risco." |
 
 ---
 
 ## Regras de CTA
 
-- **CTA principal (único):** Agendar diagnóstico. Aparece no header, hero, depois do método (B6), depois do "para quem é" (B8) e no final (B12).
+- **CTA principal (único):** Agendar diagnóstico. Aparece no header, hero, depois do método (B6), depois dos serviços (B7) e no final (B11).
 - **CTA secundário:** "Ver como funciona" (âncora para B6), somente no hero.
 - **WhatsApp flutuante:** atalho para quem já está decidido.
 
@@ -100,4 +96,4 @@
 
 - Tom visual de consultoria / diretoria, não de agência criativa.
 - B2 e B4 são os blocos de maior contraste visual da página.
-- Foto real do Pedro no hero e no B9 (evitar banco de imagem).
+- Foto real do Pedro no hero e no B8 (evitar banco de imagem).
