@@ -1,0 +1,8 @@
+{
+  // Site estático da WayDigitus servido pela Cloudflare (Workers com arquivos estáticos)
+  "name": "pedro-gestao-de-trafego",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./site/landing"
+  }
+}
