@@ -71,6 +71,10 @@ nav .btn{padding:13px 22px;font-size:15px}
 .phone-screen{position:relative;width:100%;height:100%;border-radius:34px;background:#1A2253;overflow:hidden;display:flex;align-items:center;justify-content:center;border:0;padding:0;cursor:pointer;color:var(--dim);font-family:inherit}
 .phone-screen img,.phone-screen video,.phone-screen iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
 .play{position:relative;width:68px;height:68px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
+.cover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-start;gap:10px;padding:40px 24px 36px;background:radial-gradient(120% 70% at 80% 20%,#2A5BD7 0%,rgba(42,91,215,0) 60%),linear-gradient(160deg,#0B1560 0%,#132A86 55%,#0A0F3C 100%);text-align:left}
+.cover-title{margin-top:auto;font-family:Poppins,'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:34px;line-height:1.05;letter-spacing:-0.02em;color:#fff}
+.cover-sub{font-size:14px;color:#C9D6FF}
+.phone-screen .play{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .video-caption{font-size:14px;line-height:1.5;color:var(--dim);text-align:center;max-width:300px}
 .scroll-cue{text-align:center;font-size:13px;color:var(--dim);padding:28px 0 28px}
 
@@ -244,7 +248,11 @@ footer{background:#05081D;padding-block:56px 40px}
         <!-- Vídeo do YouTube (Shorts). Só carrega quando a pessoa clica: a página abre mais rápido.
              Para trocar de vídeo, mude o ID em data-youtube e nas imagens da capa. -->
         <button class="phone-screen" id="play-video" type="button" data-youtube="CxByBvdDick" aria-label="Assistir vídeo: Somos a WayDigitus">
-          <img src="https://i.ytimg.com/vi/CxByBvdDick/oardefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/CxByBvdDick/hqdefault.jpg'" alt="">
+          <span class="cover">
+            <span class="cover-top"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="height:56px;width:auto" viewBox="60 30 520 395" fill="none"><defs><mask id="saida-video"><rect x="60" y="30" width="520" height="395" fill="#fff"/><rect x="370" y="212" width="100" height="32" fill="#000"/></mask></defs><path mask="url(#saida-video)" fill="#1E8BFF" d="M130 45H250C372 45 448 130 448 228C448 334 368 412 256 412H232V352H256C332 352 388 298 388 228C388 158 333 105 250 105H190V292H130Z"/><g stroke="#2E9BFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M266 160V250C266 270 256 282 236 290L150 322C132 329 126 340 126 356"/><path d="M78 356C78 342 86 332 100 330L274 308C296 304 308 292 308 270V256C308 238 318 228 338 228H548"/></g><g fill="#2E9BFF"><circle cx="266" cy="156" r="14"/><circle cx="126" cy="360" r="14"/><circle cx="78" cy="360" r="14"/><circle cx="556" cy="228" r="16"/></g></svg></span>
+            <span class="cover-title">Somos a<br>WayDigitus</span>
+            <span class="cover-sub">Assista em 1 minuto</span>
+          </span>
           <span class="play"><svg width="24" height="24" viewBox="0 0 24 24" fill="#080C28" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
         </button>
       </div>
