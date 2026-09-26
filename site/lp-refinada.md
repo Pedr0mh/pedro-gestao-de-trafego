@@ -57,7 +57,7 @@ Quem já trabalha com a gente: [2 depoimentos reais, de preferência com número
 ## 9. Sobre
 - **Título:** Prazer, eu sou o Pedro.
 - **Texto:** Comecei como gestor de tráfego. Com o tempo, vi um padrão que se repetia: campanha boa e cliente sem crescer. O anúncio trazia gente, mas faltava uma oferta clara, alguém respondendo rápido, alguém fazendo o follow-up.
-  Hoje eu entro na empresa para cuidar disso tudo junto com o dono. É o trabalho de um diretor de marketing, feito de perto, por alguém que conhece a sua operação pelo nome.
+  Hoje eu entro na empresa para cuidar disso tudo junto com o dono. É o trabalho de um diretor de marketing, feito de perto, por alguém que conhece a sua operação.
 - **Botão:** Conversar com o Pedro
 
 ## 10. Dúvidas frequentes
