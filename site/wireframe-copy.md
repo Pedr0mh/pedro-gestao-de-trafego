@@ -368,6 +368,34 @@
 
 ---
 
+## Versão escolhida para teste: Proposta 4 (estrutura da 3 + cores da 1)
+
+**Ordem dos blocos:** Topo com vídeo no celular → faixa "Pessoa certa · Hora certa · Lugar certo · Venda no caixa" → Atenção no celular → Agência x CMO → Quebra de crença → Dor → Mercadologia → Método → Serviços → Sobre (com números) → Dúvidas → Formulário de contato → Rodapé.
+
+**Botões de conversão (alta conversão):**
+- Topo: "Agendar diagnóstico gratuito" + "Falar no WhatsApp"
+- Agência x CMO: "Quero um CMO na minha empresa"
+- Dor: "Quero descobrir onde estou perdendo vendas"
+- Método: "Quero começar pelo diagnóstico" + "Falar no WhatsApp"
+- Serviços: "Agendar diagnóstico"
+- Sobre: "Conversar com o Pedro"
+- Dúvidas: "Ficou alguma dúvida? Me chama direto." + "Falar no WhatsApp"
+- Botão flutuante de WhatsApp fixo na tela
+
+**Formulário final**
+- Selo: DIAGNÓSTICO GRATUITO · 45 MINUTOS
+- Headline: Pare de comprar comunicação. Comece a construir vendas.
+- Texto: Preencha o formulário e eu entro em contato para agendar o seu diagnóstico. Vou olhar o seu mercado, a sua oferta e o seu comercial e te mostrar onde a sua empresa está deixando dinheiro na mesa.
+- Garantias: Resposta em até 1 dia útil · Sem compromisso de contratação · Se eu não puder te ajudar, digo isso na primeira conversa
+- Campos: Nome · E-mail · WhatsApp · Empresa · Faturamento mensal (faixas) · Qual é o seu maior desafio hoje?
+- Botão: Quero meu diagnóstico
+- Microcopy: Seus dados ficam só com a WayDigitus e são usados apenas para esse contato.
+- Alternativa: Prefere falar agora? Chamar no WhatsApp
+
+**Rodapé:** logo e frase · Navegação · Contato (WhatsApp, e-mail, Instagram) · Atendimento (horário, cidade) · CNPJ · Política de privacidade
+
+---
+
 ## Para aprimorar depois
 
 **Dor (B3)**
