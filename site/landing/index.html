@@ -71,23 +71,13 @@ nav .btn{padding:13px 22px;font-size:15px}
 /* Hero */
 .hero{min-height:calc(100svh - 96px);display:flex;flex-direction:column;padding-block:16px 0}
 .hero > .wrap{flex:1;width:100%}
-.hero .wrap{display:grid;grid-template-columns:1.45fr 1fr;gap:80px;align-items:center}
+.hero .wrap{display:flex;align-items:center}
 .hero-text{display:flex;flex-direction:column;gap:clamp(14px,2.4vh,22px)}
 .eyebrow{font-size:15px;color:var(--accent-soft)}
-.hero h1{font-size:clamp(38px,min(4.6vw,6.6vh),64px);line-height:1.08;letter-spacing:-0.035em}
-.hero .lead{font-size:clamp(17px,2.4vh,20px);line-height:1.6;color:var(--muted);max-width:580px}
+.hero h1{max-width:1120px;font-size:clamp(40px,min(6.4vw,9.4vh),92px);line-height:1.08;letter-spacing:-0.035em}
+.hero .lead{font-size:clamp(18px,2.6vh,22px);line-height:1.6;color:var(--muted);max-width:900px}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
 .hero .note{font-size:14px;color:var(--dim)}
-.video{display:flex;flex-direction:column;align-items:center;gap:18px}
-.phone{height:min(560px,58vh);width:auto;aspect-ratio:300/580;max-width:100%;border-radius:44px;background:var(--surface);padding:12px;box-shadow:0 30px 80px rgba(54,86,245,.25)}
-.phone-screen{position:relative;width:100%;height:100%;border-radius:34px;background:#1A2253;overflow:hidden;display:flex;align-items:center;justify-content:center;border:0;padding:0;cursor:pointer;color:var(--dim);font-family:inherit}
-.phone-screen img,.phone-screen video,.phone-screen iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
-.play{position:relative;width:68px;height:68px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
-.cover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-start;gap:10px;padding:40px 24px 36px;background:radial-gradient(120% 70% at 80% 20%,#2A5BD7 0%,rgba(42,91,215,0) 60%),linear-gradient(160deg,#0B1560 0%,#132A86 55%,#0A0F3C 100%);text-align:left}
-.cover-title{margin-top:auto;font-family:Poppins,'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:min(34px,4vh);line-height:1.05;letter-spacing:-0.02em;color:#fff}
-.cover-sub{font-size:14px;color:#C9D6FF}
-.phone-screen .play{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);box-shadow:0 10px 30px rgba(0,0,0,.35)}
-.video-caption{font-size:14px;line-height:1.5;color:var(--dim);text-align:center;max-width:300px}
 .scroll-cue{display:flex;align-items:center;gap:12px;width:max-content;margin:0 auto;padding:8px 8px 8px 18px;border-radius:999px;border:1px solid var(--line-2);background:rgba(13,18,53,.6);font-size:14px;color:var(--text);text-decoration:none;transition:opacity .3s ease}
 .scroll-cue:hover{border-color:var(--accent-soft)}
 .hero .scroll-cue{margin-block:8px 28px}
@@ -199,6 +189,12 @@ footer{background:#05081D;padding-block:56px 40px}
 .wa-float{position:fixed;right:24px;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:50;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(0,0,0,.35);transition:transform .15s ease}
 .wa-float:hover{transform:translateY(-2px)}
 
+@media (min-width:1101px){
+  .hero h1{max-width:none;text-wrap:initial;line-height:1.06}
+  .hero h1 .l1,.hero h1 .accent{display:block;white-space:nowrap}
+  .hero h1 .l1{font-size:min(calc((100vw - 2 * var(--pad-x)) / 21.4),56px)}
+  .hero h1 .accent{font-size:min(calc((100vw - 2 * var(--pad-x)) / 16.2),74px)}
+}
 /* Tablet */
 @media (max-width:1100px){
   :root{--pad-x:48px;--pad-y:88px}
@@ -228,8 +224,7 @@ footer{background:#05081D;padding-block:56px 40px}
   .compare,.three,.testimonials,.checks,.steps{grid-template-columns:1fr}
   .checks li:nth-last-child(2){border-bottom:0}
   .compare-card,.testimonial,.form{padding:28px}
-  .phone{height:480px}
-  .foot{grid-template-columns:1fr}
+    .foot{grid-template-columns:1fr}
   .wa-float{right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:56px;height:56px}
   nav .btn{display:none}
 }
@@ -268,28 +263,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="hero-text">
       <span class="eyebrow">Marketing e vendas para empresas que querem crescer</span>
-      <h1>Sua empresa não precisa de mais uma agência. <span class="accent">Precisa de um diretor de marketing.</span></h1>
+      <h1><span class="l1">Sua empresa não precisa de mais uma agência.</span> <span class="accent">Precisa de um diretor de marketing.</span></h1>
       <p class="lead">Eu sou o Pedro, e trabalho como o diretor de marketing da sua empresa. Olho o mercado, arrumo o comercial e o CRM, e só depois invisto em anúncio no Google e na Meta.</p>
       <div class="ctas">
         <a class="btn btn-primary btn-lg btn-brilho" href="https://wa.me/5561998870446?text=Oi%2C%20Pedro!%20Vim%20pelo%20site%20e%20quero%20agendar%20o%20diagn%C3%B3stico." target="_blank" rel="noopener">Agendar diagnóstico gratuito</a>
         <a class="btn btn-ghost btn-anel" href="https://wa.me/5561998870446?text=Oi%2C%20Pedro!%20Vim%20pelo%20site%20e%20quero%20agendar%20o%20diagn%C3%B3stico." target="_blank" rel="noopener">Falar no WhatsApp</a>
       </div>
       <span class="note">Conversa de 45 minutos, sem custo e sem compromisso.</span>
-    </div>
-    <div class="video">
-      <div class="phone">
-        <!-- Vídeo do YouTube (Shorts). Só carrega quando a pessoa clica: a página abre mais rápido.
-             Para trocar de vídeo, mude o ID em data-youtube e nas imagens da capa. -->
-        <button class="phone-screen" id="play-video" type="button" data-youtube="CxByBvdDick" aria-label="Assistir vídeo: Somos a WayDigitus">
-          <span class="cover">
-            <span class="cover-top"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="height:56px;width:auto" viewBox="60 30 520 395" fill="none"><defs><mask id="saida-video"><rect x="60" y="30" width="520" height="395" fill="#fff"/><rect x="370" y="212" width="100" height="32" fill="#000"/></mask></defs><path mask="url(#saida-video)" fill="#1E8BFF" d="M130 45H250C372 45 448 130 448 228C448 334 368 412 256 412H232V352H256C332 352 388 298 388 228C388 158 333 105 250 105H190V292H130Z"/><g stroke="#2E9BFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M266 160V250C266 270 256 282 236 290L150 322C132 329 126 340 126 356"/><path d="M78 356C78 342 86 332 100 330L274 308C296 304 308 292 308 270V256C308 238 318 228 338 228H548"/></g><g fill="#2E9BFF"><circle cx="266" cy="156" r="14"/><circle cx="126" cy="360" r="14"/><circle cx="78" cy="360" r="14"/><circle cx="556" cy="228" r="16"/></g></svg></span>
-            <span class="cover-title">Somos a<br>WayDigitus</span>
-            <span class="cover-sub">Assista em 59 segundos</span>
-          </span>
-          <span class="play"><svg width="24" height="24" viewBox="0 0 24 24" fill="#080C28" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-        </button>
-      </div>
-      <span class="video-caption">Seu cliente passa horas no celular. Em 59 segundos, eu explico como aparecer para ele na hora certa.</span>
     </div>
   </div>
   <a class="scroll-cue" href="#problema">
@@ -473,25 +453,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </a>
 
 <script>
-// Vídeo do YouTube: só carrega no clique
-document.getElementById('play-video').addEventListener('click', function () {
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({ event: 'play_video' });
-  var id = this.getAttribute('data-youtube');
-  // Aberto direto do computador (file://) o YouTube recusa o player (erro 153): abre no YouTube
-  if (location.protocol === 'file:') { window.open('https://www.youtube.com/shorts/' + id, '_blank', 'noopener'); return; }
-  var box = document.createElement('div');
-  box.className = 'phone-screen';
-  var f = document.createElement('iframe');
-  f.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&playsinline=1&rel=0&origin=' + encodeURIComponent(location.origin);
-  f.referrerPolicy = 'strict-origin-when-cross-origin';
-  f.title = 'Somos a WayDigitus';
-  f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-  f.allowFullscreen = true;
-  box.appendChild(f);
-  this.replaceWith(box);
-});
-
 // Formulário: troque o ENDPOINT pelo webhook do seu CRM (RD Station, Kommo, Pipedrive, Zapier, Make...)
 var ENDPOINT = '';
 document.getElementById('lead-form').addEventListener('submit', function (e) {
