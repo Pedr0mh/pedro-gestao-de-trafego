@@ -200,6 +200,32 @@ footer{background:#05081D;padding-block:56px 40px}
   .hero h1 .l1{font-size:min(calc((100vw - 2 * var(--pad-x)) / 21.4),56px)}
   .hero h1 .accent{font-size:min(calc((100vw - 2 * var(--pad-x)) / 16.2),74px)}
 }
+/* A solução: Estratégia → Tráfego → Comercial/CRM */
+.fluxo{display:grid;grid-template-columns:minmax(0,1fr) 56px minmax(0,1fr) 56px minmax(0,1fr) 56px minmax(0,.78fr);align-items:stretch;margin-top:56px}
+.etapa{position:relative;display:flex;flex-direction:column;gap:14px;padding:32px 28px;border-radius:24px;background:var(--surface);border:1px solid var(--line-2)}
+.etapa-topo{display:flex;align-items:center;justify-content:space-between}
+.etapa-n{font-size:13px;font-weight:600;letter-spacing:.14em;color:var(--accent-soft)}
+.etapa-icone{width:48px;height:48px;border-radius:14px;background:rgba(54,86,245,.16);display:flex;align-items:center;justify-content:center}
+.etapa h3{margin:0;font-weight:600;font-size:23px;letter-spacing:-0.02em}
+.etapa .papel{font-size:14px;color:var(--accent-soft);margin-top:-8px}
+.etapa p{font-size:16px;line-height:1.6;color:var(--muted)}
+.etapa-saida{margin-top:auto;padding-top:18px;border-top:1px solid var(--line-2);display:flex;flex-direction:column;gap:8px}
+.etapa-saida small{font-size:13px;color:var(--dim)}
+.barra{height:8px;border-radius:999px;background:rgba(169,192,255,.12);overflow:hidden}
+.barra span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#3656F5,#A9C0FF)}
+.etapa-saida strong{font-size:15px;font-weight:600}
+.liga{position:relative;display:flex;align-items:center;justify-content:center}
+.liga::before{content:"";width:100%;height:2px;background:repeating-linear-gradient(90deg,var(--accent-soft) 0 6px,transparent 6px 14px);background-size:14px 2px;animation:fluir 0.9s linear infinite}
+.liga::after{content:"";position:absolute;right:2px;width:9px;height:9px;border-top:2px solid var(--accent-soft);border-right:2px solid var(--accent-soft);transform:rotate(45deg)}
+@keyframes fluir{from{background-position:0 0}to{background-position:14px 0}}
+.resultado{display:flex;flex-direction:column;justify-content:center;gap:12px;padding:32px 24px;border-radius:24px;background:linear-gradient(160deg,#3656F5 0%,#132A86 100%);color:#fff}
+.resultado .etapa-icone{background:rgba(255,255,255,.16)}
+.resultado span{font-size:13px;font-weight:600;letter-spacing:.14em;color:#DCE5FF}
+.resultado strong{font-size:21px;font-weight:600;line-height:1.2;letter-spacing:-0.02em}
+.resultado p{font-size:15px;line-height:1.55;color:#DCE5FF}
+.fluxo-alerta{margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.fluxo-alerta p{font-size:17px;line-height:1.6;color:var(--muted);max-width:780px}
+.fluxo-alerta p strong{color:var(--text);font-weight:600}
 /* Tablet */
 @media (max-width:1100px){
   :root{--pad-x:48px;--pad-y:88px}
@@ -214,6 +240,13 @@ footer{background:#05081D;padding-block:56px 40px}
   .foot{grid-template-columns:1fr 1fr}
   nav a.link{display:none}
 }
+@media (max-width:1100px){
+  .fluxo{grid-template-columns:1fr;max-width:560px}
+  .liga{height:44px}
+  .liga::before{width:2px;height:100%;background:repeating-linear-gradient(180deg,var(--accent-soft) 0 6px,transparent 6px 14px);background-size:2px 14px;animation-name:fluir-v}
+  .liga::after{right:auto;bottom:4px;transform:rotate(135deg)}
+}
+@keyframes fluir-v{from{background-position:0 0}to{background-position:0 14px}}
 /* Celular */
 @media (max-width:640px){
   :root{--pad-x:20px;--pad-y:64px}
@@ -233,7 +266,7 @@ footer{background:#05081D;padding-block:56px 40px}
   .wa-float{right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:56px;height:56px}
   nav .btn{display:none}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.wa-float{transition:none}.scroll-btn,.btn-brilho::after,.btn-anel{animation:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.wa-float{transition:none}.scroll-btn,.btn-brilho::after,.btn-anel,.liga::before{animation:none}}
 </style>
 </head>
 <body>
@@ -325,6 +358,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span>Dizemos o que precisa ser feito, e por quê</span>
         <span>Olhamos para o seu mercado</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="solucao" class="bg-2">
+  <div class="wrap sec-label">A solução</div>
+  <div class="wrap">
+    <div class="two-col-head" style="margin-bottom:0">
+      <h2 class="h2">Três peças. Um só caminho até o cliente.</h2>
+      <p class="muted" style="font-size:18px;line-height:1.65">Tráfego pago sozinho não vende. Ele dá resultado quando está entre uma boa estratégia e um comercial pronto para receber o contato.</p>
+    </div>
+    <div class="fluxo">
+      <div class="etapa">
+        <div class="etapa-topo"><span class="etapa-icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A9C0FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8z"/></svg></span><span class="etapa-n">01</span></div>
+        <h3>Estratégia</h3>
+        <span class="papel">O caminho</span>
+        <p>Antes de investir, definimos para quem vender, com qual oferta e em quais canais. Assim cada real em anúncio vai na direção certa.</p>
+        <div class="etapa-saida"><small>O que sai daqui</small><div class="barra"><span style="width:100%"></span></div><strong>As pessoas certas</strong></div>
+      </div>
+      <div class="liga" aria-hidden="true"></div>
+      <div class="etapa">
+        <div class="etapa-topo"><span class="etapa-icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A9C0FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg></span><span class="etapa-n">02</span></div>
+        <h3>Tráfego pago</h3>
+        <span class="papel">A demanda</span>
+        <p>Google e Meta colocam a sua empresa na frente de quem procura o que você vende. É a mídia paga trazendo contatos todos os dias.</p>
+        <div class="etapa-saida"><small>O que sai daqui</small><div class="barra"><span style="width:66%"></span></div><strong>Contatos interessados</strong></div>
+      </div>
+      <div class="liga" aria-hidden="true"></div>
+      <div class="etapa">
+        <div class="etapa-topo"><span class="etapa-icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A9C0FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 19v-1.5a3.5 3.5 0 0 0-3.5-3.5h-5A3.5 3.5 0 0 0 4 17.5V19"/><circle cx="10" cy="7.5" r="3.5"/><path d="M17 11l2 2 3-4"/></svg></span><span class="etapa-n">03</span></div>
+        <h3>Comercial e CRM</h3>
+        <span class="papel">A conversão</span>
+        <p>Cada contato entra no CRM, é qualificado e acompanhado até a venda. Ninguém fica esquecido no WhatsApp.</p>
+        <div class="etapa-saida"><small>O que sai daqui</small><div class="barra"><span style="width:36%"></span></div><strong>Clientes fechados</strong></div>
+      </div>
+      <div class="liga" aria-hidden="true"></div>
+      <div class="resultado">
+        <span class="etapa-icone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17l6-6 4 4 6-7"/><path d="M14 8h6v6"/></svg></span>
+        <span>RESULTADO</span>
+        <strong>Clientes novos, todo mês, com previsibilidade.</strong>
+        <p>Você sabe quanto investe, quantos contatos chegam e quantos viram venda.</p>
+      </div>
+    </div>
+    <div class="fluxo-alerta">
+      <p><strong>Se uma peça falta, o caminho quebra.</strong> Sem estratégia, o anúncio gasta à toa. Sem tráfego, não chega gente. Sem CRM, o contato esfria e some.</p>
+      <a class="btn btn-primary" href="https://wa.me/5561998870446?text=Oi%2C%20Pedro!%20Vim%20pelo%20site%20e%20quero%20agendar%20o%20diagn%C3%B3stico." target="_blank" rel="noopener">Quero esse caminho na minha empresa</a>
     </div>
   </div>
 </section>
